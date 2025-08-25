@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow - Colorful To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1>TaskFlow</h1>
+        <p>Organize your tasks beautifully ✨</p>
+      </div>
+      <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
+    </div>
+
+    <div class="input-section">
+      <input id="taskInput" type="text" placeholder="Add a new task..." />
+      <select id="priority">
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+        <option value="low">Low</option>
+      </select>
+      <button class="btn" id="addTaskBtn">+ Add</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="active">Active</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+
+    <div class="search-box">
+      <input id="search" type="search" placeholder="Search tasks..." />
+    </div>
+
+    <div class="task-list" id="taskList"></div>
+
+    <div class="stats">
+      <div class="stat-card"><h2 id="totalTasks">0</h2><p>Total</p></div>
+      <div class="stat-card"><h2 id="activeTasks">0</h2><p>Active</p></div>
+      <div class="stat-card"><h2 id="completedTasks">0</h2><p>Completed</p></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
